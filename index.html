@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(3, 3, 37)">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+    </style>
+    <div id="root"></div>
+
+    <script>
+        let pp =React.createElement('img', {
+        src:"https://is5-ssl.mzstatic.com/image/thumb/Music122/v4/9e/14/01/9e1401d2-063e-d590-5912-4d15824a430c/pr_source.png/190x190cc.webp" ,
+        style:{borderRadius:"50%",
+               height:"110px",
+               width:"110px",
+               marginTop:"50px",
+               marginLeft:"140px"
+
+    }
+
+    
+    
+    
+    
+    }, null)
+
+
+    let nameh = React.createElement('h1',{style:{
+                                                 fontFamily:"Verdana", 
+                                                 color:"rgb(111,111,111)",
+                                                 marginLeft:"72px",
+                                                 marginTop:"20px",
+                                                 fontSize:"22px"
+                                                }}, "Jibanranjan Debata")
+
+    let para = React.createElement('p',{style:{ fontFamily:"Garamond",
+                                                color:"rgb(128,128,128)",
+                                                marginLeft:"72px",
+                                                marginTop:"8px",
+
+
+
+
+
+    }}, "I enjoy drinking cup of tea every day")
+
+
+
+    let postno = React.createElement('h2',{style:{marginLeft:"45px",
+                                                  color:"rgb(155,69,228)",
+                                                  marginTop:"25px"
+
+
+
+}},"178")
+
+
+    let flwrno = React.createElement('h2', {style:{marginLeft:"75px",
+                                                  color:"rgb(155,69,228)",
+                                                  marginTop:"25px"
+
+
+
+}}
+    
+    
+    
+    ,"8000")
+
+
+    let flwingno = React.createElement('h2', {style:{marginLeft:"95px",
+                                                  color:"rgb(155,69,228)",
+                                                  marginTop:"25px"
+
+
+
+}}
+    
+    
+    
+    
+    , "235")
+
+
+
+
+
+
+
+
+
+
+    let nodiv = React.createElement('div',{style:{ 
+                                                    display: "flex",
+                                                    justifyContent: "spaceBetween"
+
+
+
+
+
+    }},[postno,flwrno,flwingno])
+
+
+let posth = React.createElement('h4',{style:{color:"rgb(128,128,128)", marginTop:"5PX" ,marginLeft:"40px"}},"POSTS")
+
+
+let flwrh = React.createElement('h4',{style:{color:"rgb(128,128,128)",marginTop:"-17px", marginLeft:"130px"}}, "FOLLOWERS")
+
+
+let flwng = React.createElement('h4',{style:{color:"rgb(128,128,128)",marginTop:"-17px", marginLeft:"270px"}},"FOLLOWING" )
+
+
+
+let hdiv = React.createElement('div',null,[posth,flwrh,flwng]) 
+
+
+
+let btn1 = React.createElement("button", {style:{width:"120px", height:"40px", backgroundColor:"rgb(155,69,228)", color:"white", border:"none", borderRadius:"10px",cursor:"pointer"}}, "FOLLOW" )
+let btn2 = React.createElement("button", {style:{width:"120px", height:"40px", backgroundColor:"rgb(225,58,157)",color:"white", border:"none", borderRadius:"10px",cursor:"pointer"}}, "MESSAGE")
+
+
+let btndiv = React.createElement("div", {style:{marginTop:"30px",
+                                                display:"flex",
+                                                gap:"100px",
+                                                marginLeft:"30px",
+                                                // width:"50px"
+
+}},[btn1,btn2])
+
+
+
+
+let dotdiv = React.createElement("div", {style:{ height:"12px",
+                                                 width:"12px",
+                                                 backgroundColor:"rgb(4,170,109)",
+                                                 borderRadius:"50%",
+                                                 boxShadow:" 0 0 5px 5px white",
+                                                 marginTop:"-245px",
+                                                 marginLeft:"236px"
+                                                
+
+
+}}, "")
+
+
+
+
+
+
+
+let maindiv = React.createElement('div', {style:{
+                                                //  display: "flex",
+                                                //  alignItems: "center",
+                                                //  alignContent: "center",
+                                                //  justifyContent: "center",
+                                                 backgroundColor:"white",
+                                                 marginTop:"130px",
+                                                 marginLeft:"480px",
+                                                 width:"400px",
+                                                 height:"410px"
+                                                 
+}
+}, [pp,nameh,para,nodiv,hdiv,btndiv,dotdiv])
+
+
+
+ReactDOM.render(maindiv, document.getElementById('root'))
+
+
+
+
+    </script>
+</body>
+</html>
